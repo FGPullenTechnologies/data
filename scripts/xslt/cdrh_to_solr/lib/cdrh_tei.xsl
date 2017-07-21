@@ -3,6 +3,8 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   exclude-result-prefixes="#all">
+  
+  <xsl:param name="collection"/>
 
   <xsl:template match="/" exclude-result-prefixes="#all">
     <xsl:variable name="filename" select="tokenize(base-uri(.), '/')[last()]"/>

@@ -163,7 +163,7 @@
         <!-- subjects -->
         <!-- description -->
         <!-- publisher -->
-        <!--<xsl:call-template name="publisher"/>-->
+        <xsl:call-template name="publisher"/>
 
         <!-- contributor -->
         <!-- contributors -->
@@ -306,7 +306,7 @@
     <field name="uriXML">
       <xsl:value-of select="$file_location"/>
       <xsl:value-of select="$slug"/>
-      <xsl:text>/tei/</xsl:text>
+      <xsl:text>/vra/</xsl:text>
       <xsl:value-of select="$id"/>
       <xsl:text>.xml</xsl:text>
     </field>
